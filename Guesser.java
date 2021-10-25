@@ -1,4 +1,4 @@
-import java.io.Console;
+import java.util.Scanner;
 
 /**
  * Assignment 1 - Guessing Game
@@ -23,7 +23,10 @@ public class Guesser{
    */
   
   // Write the constructor below this line.
-
+Guesser(int low, int high) {
+  this.low = low;
+  this.high = high;
+}
 
   /*
    * Task 2. Complete the start() method, so that

@@ -26,8 +26,6 @@ public class Guesser{
 Guesser(int low, int high) {
   this.low = low;
   this.high = high;
-  //too see that Guesser is created in main class
-  System.out.println("Guesser is here");
 }
 
   /*
@@ -37,7 +35,9 @@ Guesser(int low, int high) {
    */
   public void start(){
     // call the rules method here
+    rules();
     // call the doGuesses() method here
+    doGuesses();
   }
 
   private void rules(){

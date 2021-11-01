@@ -1,0 +1,20 @@
+När använder man add respektive commit?
+Git använder en tvåstegsprocess för att ändra i ditt repo. 
+Det första steget är att använda git add som lägger till ändringarna i Gits index, alltså vad man kallar staging area.
+Detta gör du innan du använder git commit. På så vis kan man välja ut vilka filer som du vill ska ingå i samma commit.
+När filerna som du vill lägga till är adderade med add så ska man göra en commit, genom kommandot git commit -m.
+Man lägger alltså till ändringarna från Gits index till det lokala repot med detta kommando. Det är viktigt att också skriva ett meddelande på vad man har gjort för ändringar och för det används flaggan -m.
+När du har commitat dina filer, så kan man köra git status för att se att det inte finns några rapporterade ändringar sedan din senaste commit.
+
+Vad är pull repektive push?
+När du har gjort ändringar i ditt lokala repo och kört add och commit, kör du kommandot git push.
+Detta kommando gör att du lägger till dina ändringar till din remote repository i till exempel GitHub, eller en annan server.
+Git pull är det kommando du använder för att ladda ner commits från remote repository. Kommandot laddar alltså ner de förändringar som gjorts och man får samma version som finns i tex GitHub. 
+
+När använder man log respektive status?
+Git log är ett kommando som du kör för att få en lista med historik på alla commits och sorteras med nyast överst.
+Git status används för att se vilka filer som man har lagt till, tagit bort och regigerat sedan föregående commit.
+
+Hur kan man formulera sig i sina commit-meddelanden?
+Det är viktigt att man har kortfattade, tydliga och beskrivande commitmeddelanden som beskriver vad man har gjort innan man commitar.
+Detta gör att man underlättar för eventuella andra kollegor som jobbar i projektet, så att de kan följa vilka ändringar som genomförts.
